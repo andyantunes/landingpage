@@ -1,0 +1,273 @@
+:root {
+  --color-header: #34bf98;
+  font-size: 60%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  background-color: var(--color-header);
+}
+
+header .logo {
+  margin-right: auto;
+}
+
+header .logo-instagram {
+  width: 3rem;
+  margin-left: 10rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header ul li a {
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer {
+  padding: 0 30px;
+  background-color: var(--color-header);
+}
+
+footer .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 0;
+}
+
+footer .logo-instagram {
+  width: 3rem;
+  margin-left: 10rem;
+}
+
+footer small {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  padding: 0 15rem;
+}
+
+.section-1 {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: url("/public/images/1327133.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.section-1 h2 {
+  font-size: 6rem;
+  color: #fff;
+}
+
+.section-1 p {
+  font-size: 6rem;
+  color: #fff;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.section-2 .text {
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.section-2 .text::after {
+  content: "";
+  background-color: #ccc;
+  height: 1px;
+  width: 60vw;
+  position: absolute;
+  top: 180px;
+  left: -50px;
+  right: 0px;
+}
+
+.section-2 .text h2,
+.section-3 .text h2,
+.section-4 .text h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.section-2 .text p,
+.section-3 .text p,
+.section-4 .text p {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.list-image {
+  display: flex;
+}
+
+.list-image figure img {
+  width: 300px;
+}
+
+.list-image figure figcaption {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+
+.section-3 {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.section-3 .text {
+  padding-bottom: 40px;
+}
+
+.section-3 .action-button a {
+  background-color: var(--color-header);
+  padding: 1.2rem;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.8rem;
+}
+
+.section-4 {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-4 .list-image {
+  display: flex;
+}
+
+.section-4 .list-image img,
+.section-5 .list-image img,
+.section-6 .steps img {
+  width: 250px;
+}
+
+.section-5 {
+  background-color: #efefef;
+  padding: 70px 50px;
+}
+
+.section-5 .list-image {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-6 {
+  text-align: center;
+  padding: 50px 0;
+}
+.section-6 h2 {
+  font-size: 2.6rem;
+}
+
+.section-6 .steps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-6 .steps figcaption {
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+
+.section-7 {
+  text-align: center;
+  background-color: #efefef;
+  padding: 50px 0;
+}
+
+.section-7 h2 {
+  font-size: 3.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-7 form {
+  margin: 0 auto;
+  max-width: 50vw;
+}
+
+.section-7 fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+}
+
+.section-7 input,
+.section-7 textarea {
+  width: 100%;
+}
+
+.section-7 form textarea,
+.section-7 form input + input {
+  margin-top: 10px;
+}
+
+.section-7 form input {
+  height: 4.5rem;
+  font-size: 2rem;
+  padding: 0 15px;
+  color: #555;
+}
+
+.section-7 form textarea {
+  height: 200px;
+  font-size: 2.5rem;
+  padding: 15px;
+  color: #555;
+}
+
+.section-7 form input,
+.section-7 form textarea {
+  border-radius: 0.8rem;
+  border: 0.5px solid #ccc;
+}
+
+.section-7 form button {
+  background-color: var(--color-header);
+  padding: 1.2rem 2rem;
+  margin: 20px auto 10px;
+  border: 0;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  color: #fff;
+}
